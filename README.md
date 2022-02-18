@@ -22,6 +22,9 @@
 
 
 # Usage/Examples
+ 
+Heroku App Link - https://extraction-url-meatadata.herokuapp.com/
+or https://git.heroku.com/extraction-url-meatadata.git   [Note : not attached with frontend so it will not show page but it is deployed]
 
 WAY-1
  Extract ZipFile (follow steps)
