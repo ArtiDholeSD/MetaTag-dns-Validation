@@ -20,9 +20,9 @@ WAY-1
 WAY-2
 clone this project (follow steps) NOTE:you have to install node modules,"npm i"
 
-Step1: Extract ZipFile , open Folder(MetaProject) in Vs code.
+Step1:  open Folder(MetaProject) in Vs code.
 
-Step2:open the terminal in Vs code And Type "cd src",As required module are located in src folder.
+Step2:  open the terminal in Vs code And Type "cd src",As required module are located in src folder.
 ```bash
 cd src
 ```
@@ -39,10 +39,10 @@ node index.js
    
   2.get dns TXT record from url : http://localhost:3000/getgetDNStxt
 
-Step4:Open the postMan.
- Create a New Collection i.e."Test-MetaProject"(you can choose any Name) 
- right Click on Test-MetaProject,
- create a "New request" : Type "http://localhost:3000/getMetadataFromUrl" and select  "Post" Method.
+Step4:    Open the postMan.
+      Create a New Collection i.e."Test-MetaProject"(you can choose any Name) 
+      right Click on Test-MetaProject,
+      create a "New request" : Type "http://localhost:3000/getMetadataFromUrl" and select  "Post" Method.
 
 
 Step5:Select the "Body" In Postman and then select "raw" and select format "json"
