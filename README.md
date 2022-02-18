@@ -15,6 +15,9 @@
 # Usage/Examples
 
 WAY-1
+ Extract ZipFile (follow steps)
+WAY-2
+clone this project (follow steps) NOTE:you have to install node modules,"npm i"
 
 Step1: Extract ZipFile , open Folder(MetaProject) in Vs code.
 
