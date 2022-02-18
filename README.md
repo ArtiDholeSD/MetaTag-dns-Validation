@@ -9,7 +9,8 @@
 
 ### This project is tested on POSTMAN (Two EndPonts)
    1.get Metadata from url : http://localhost:3000/getMetadataFromUrl
-   2.get dns TXT record from url : http://localhost:3000/getgetDNStxt
+   
+  2.get dns TXT record from url : http://localhost:3000/getgetDNStxt
 
 ### Please follow the instructions to run this project
 Step1: Extract ZipFile , open Folder(MetaProject) in Vs code.
