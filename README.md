@@ -10,6 +10,15 @@
 ##### This project based on Nodejs that means you have to install nodejs in our Computer system with all configuration
    - Express Framework , Run command as "npm i Express"
    - url-metadata package , Run command "npm i url-metadata"
+  
+ ### Modules
+ #
+1.	The first endpoint is taking the url of a site and a metatag name and validate if the metatag is present or not.
+2.	The first endpoint is returning the metatag content if the metatag is present.
+3.	The first endpoint is working with custom metatag.
+4.	The second endpoint is taking the url of a site and a dns txt record and validate if the dns txt record is present in the domain or not.
+5.	The second endpoint is returning the dns txt record if the dns txt record is present
+
 
 
 # Usage/Examples
