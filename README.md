@@ -9,6 +9,7 @@
 
 ##### This project based on Nodejs that means you have to install nodejs in our Computer system with all configuration
    - Express Framework , Run command as "npm i Express"
+   - url-metadata package , Run command "npm i url-metadata"
 
 
 # Usage/Examples
