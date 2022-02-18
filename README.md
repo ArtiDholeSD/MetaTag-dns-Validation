@@ -1,15 +1,17 @@
-# This project based on Retriving MetaData(proided tags from Url) and DNS TXT records from Domain Name.....
+# MetaData-Validation
 
-## I have written this project In Vs code For, Better coding experience
+## This project based on Retriving MetaData(proided tags from Url) and DNS TXT records from Domain Name.....
 
-## This project based on Nodejs that means you have to install nodejs in our Computer system with all configuration
+### I have written this project In Vs code For, Better coding experience
+
+### This project based on Nodejs that means you have to install nodejs in our Computer system with all configuration
    - Express Framework , Run command as "npm i Express"
 
-## This project is tested on POSTMAN (Two EndPonts)
+### This project is tested on POSTMAN (Two EndPonts)
    1.get Metadata from url : http://localhost:3000/getMetadataFromUrl
    2.get dns TXT record from url : http://localhost:3000/getgetDNStxt
 
-## Please follow the instructions to run this project
+### Please follow the instructions to run this project
 Step1: Extract ZipFile , open Folder(MetaProject) in Vs code.
 
 Step2:open the terminal in Vs code And Type "cd src",As required module are located in src folder.
