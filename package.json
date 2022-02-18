@@ -1,0 +1,29 @@
+{
+  "name": "metaproject",
+  "version": "1.0.0",
+  "description": "this is test project , we are creating 2 Apis for accessing metadata and dns txt from domain and URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtiDholeSD/MetaTag-dns-Validation.git"
+  },
+  "keywords": [
+    "meta",
+    "dns"
+  ],
+  "author": "Arti Dhole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtiDholeSD/MetaTag-dns-Validation/issues"
+  },
+  "homepage": "https://github.com/ArtiDholeSD/MetaTag-dns-Validation#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "html-metadata-parser": "^2.0.4",
+    "mongoose": "^6.2.2",
+    "url-metadata": "^2.5.0"
+  }
+}
