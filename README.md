@@ -1,6 +1,6 @@
 # MetaData-Validation
 
-## This project based on Retriving MetaData(proided tags from Url) and DNS TXT records from Domain Name.....
+## This project based on Retriving MetaData(proided tags from Url) and DNS TXT records from Url (Domain Name) .
 
 ### I have written this project In Vs code For, Better coding experience
 
