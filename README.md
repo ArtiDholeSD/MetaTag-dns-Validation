@@ -5,7 +5,7 @@
 
  This project based on Retriving MetaData(proided tags from Url) and DNS TXT records from Url (Domain Name) .
 
- I have written this project In Vs code For, Better coding experience
+ I have written this project In Vs code For, Better coding experience (must have IDE to run this project i will suggest 1.Visual studio Code, 2.Postman(as a Client), 3.Nodejs)
 
 ##### This project based on Nodejs that means you have to install nodejs in our Computer system with all configuration
    - Express Framework , Run command as "npm i Express"
