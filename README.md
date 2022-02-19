@@ -44,6 +44,24 @@ Step3:Type "node index.js" in terminal
 ```bash
 node index.js
 ```
+Note: if you not use zip file , if you clone project from github you have to run 3 commands in terminal
+-Installing NodeModules - Run 'npm i' or (npm install)
+
+```bash
+   npm i    //or (npm install)
+  ```
+-Installing Express:(if not available)
+Express Framework , Run command as "npm i Express"
+```bash
+   npm i Express  
+  ```
+-installing  url-metadata package , Run command "npm i url-metadata"
+
+```bash
+  npm i url-metadata
+  
+  ```
+Run again "node index.js" in terminal 
 
 
 ### This project is tested on POSTMAN (Two EndPonts)
