@@ -123,9 +123,3 @@ NOTE:
 
 - [@ArtiDholeSD](https://www.github.com/octokatherine)
 
-$10-worth New Year Gift for You
-Make your 2022 productive
-with LINER Premium
-
-Dismiss
-Open the gift
