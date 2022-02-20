@@ -63,9 +63,8 @@ const dns = require('dns');
 
 const getDNStxt = async function (req, res) {
   try {
-    // req.body.inputUrl;
-    //req.body.dnsTXTrecord;
-    // console.log("out present "+req.body.dnsTXTrecord)
+    // req.body.inputUrl;---->Input Url
+    //req.body.dnsTXTrecord;----->Input dnsTXTrecord Field
 
     if (!validateUrl(req.body.inputUrl)) {
       return res.status(400).send({ status: false, message: `Enter Valid Url` })
@@ -73,27 +72,20 @@ const getDNStxt = async function (req, res) {
     if (!req.body.dnsTXTrecord) {
       return res.status(400).send({ status: false, message: `Enter Valid dns TXT record` })
     }
-
+     //extracting hostname from Url
     function domainName(Url) { // reference from TutorialsPoint
-      let getTheHostName;
+      let hostName;
       if (Url.indexOf("//") > -1) {
-        getTheHostName = Url.split('/')[2];
-        //
+        hostName = Url.split('/')[2]; //splitting with / extracting data on index 2
       } else {
-        getTheHostName = Url.split('/')[0];
-        //
+        hostName = Url.split('/')[0];//splitting with / extracting data on index 1
       }
-      getTheHostName = getTheHostName.split(':')[0];
-      //
-      getTheHostName = getTheHostName.split('?')[0];
-      //
-      return getTheHostName.replace("www.", "");
-
-
+      hostName = hostName.split(':')[0];
+      hostName = hostName.split('?')[0];
+      return hostName.replace("www.", "");
     }
 
-    //console.log(domainName(req.body.inputUrl))
-
+    // reference from (node document)  https://nodejs.org/api/dns.html#dnspromisesresolvetxthostname
     //access test records from Hostname/Domain,paramerts:(hostname,callback)
     dns.resolveTxt(domainName(req.body.inputUrl), function (err, addresses) {//callback
       if (err) {
@@ -104,11 +96,11 @@ const getDNStxt = async function (req, res) {
       if (len) {
         for (value of addresses) {
           if (value.includes(req.body.dnsTXTrecord)) {
-            console.log(true)
+            //console.log(true)
             return res.status(200).send({ status: true, "TXT records": req.body.dnsTXTrecord })
           }
         }
-        console.log(false)
+        //console.log(false)
         return res.status(400).send({ status: false, message: `TXT record is not present` })
 
       } else {
