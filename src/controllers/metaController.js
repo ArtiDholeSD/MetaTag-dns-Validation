@@ -81,7 +81,7 @@ const getDNStxt = async function (req, res) {
 //       getTheHostName = getTheHostName.split('?')[0];
      
 //       return getTheHostName.replace("www.", "");
-        let url = new URL('https://www.google.com');
+        let url = new URL(Url);
       return ((url.hostname).replace("www.",""))
  }
 
