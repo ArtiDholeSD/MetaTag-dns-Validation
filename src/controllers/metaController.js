@@ -68,22 +68,22 @@ const getDNStxt = async function (req, res) {
      }
 
     function domainName(Url) { // reference from TutorialsPoint
-       let getTheHostName;
-      if (Url.indexOf("//") > -1) {
-        getTheHostName = Url.split('/')[2];
-        //
-      } else {
-        getTheHostName = Url.split('/')[0];
-        //
-      }
-      getTheHostName = getTheHostName.split(':')[0];
-      //
-      getTheHostName = getTheHostName.split('?')[0];
-      //
-      return getTheHostName.replace("www.", "");
-
-
-    }
+//        let getTheHostName;
+//       if (Url.indexOf("//") > -1) {
+//         getTheHostName = Url.split('/')[2];
+      
+//       } else {
+//         getTheHostName = Url.split('/')[0];
+       
+//       }
+//       getTheHostName = getTheHostName.split(':')[0];
+     
+//       getTheHostName = getTheHostName.split('?')[0];
+     
+//       return getTheHostName.replace("www.", "");
+        let url = new URL('https://www.google.com');
+      return ((url.hostname).replace("www.",""))
+ }
 
     //console.log(domainName(req.body.inputUrl))
 
