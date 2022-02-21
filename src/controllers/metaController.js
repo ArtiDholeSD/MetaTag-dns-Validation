@@ -74,6 +74,7 @@ const getDNStxt = async function (req, res) {
     }
      //extracting hostname from Url
     function domainName(Url) { // reference from TutorialsPoint
+      
       let hostName;
       if (Url.indexOf("//") > -1) {
         hostName = Url.split('/')[2]; //splitting with / extracting data on index 2
@@ -83,6 +84,10 @@ const getDNStxt = async function (req, res) {
       hostName = hostName.split(':')[0];
       hostName = hostName.split('?')[0];
       return hostName.replace("www.", "");
+      
+      //-------------or------------------------------------
+//       let url = new URL(Url);
+//       return ((url.hostname).replace("www.",""))
     }
 
     // reference from (node document)  https://nodejs.org/api/dns.html#dnspromisesresolvetxthostname
